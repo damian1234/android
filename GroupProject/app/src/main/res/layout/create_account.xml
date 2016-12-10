@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/create_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Create Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myHeader"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_below="@+id/myHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:id="@+id/newUserName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/newUserName"
+        android:layout_alignLeft="@+id/newUserName"
+        android:layout_alignStart="@+id/newUserName"
+        android:layout_marginTop="59dp"
+        android:id="@+id/firstPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/firstPassword"
+        android:layout_alignLeft="@+id/firstPassword"
+        android:layout_alignStart="@+id/firstPassword"
+        android:layout_marginTop="57dp"
+        android:id="@+id/secondPassword" />
+
+    <Button
+        android:text="Create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="47dp"
+        android:id="@+id/CreateButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/myHeader"
+        android:layout_alignEnd="@+id/myHeader" />
+
+    <TextView
+        android:text="Create new account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createAccount"
+        android:layout_above="@+id/CreateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp" />
+
+    <TextView
+        android:text="Repeat Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/firstPassword"
+        android:layout_alignLeft="@+id/secondPassword"
+        android:layout_alignStart="@+id/secondPassword"
+        android:layout_marginTop="36dp" />
+
+    <TextView
+        android:text="Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NewUser"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/myHeader"
+        android:layout_alignLeft="@+id/newUserName"
+        android:layout_alignStart="@+id/newUserName" />
+
+    <TextView
+        android:text="createPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newUserName"
+        android:layout_toLeftOf="@+id/myHeader"
+        android:layout_toStartOf="@+id/myHeader"
+        android:layout_marginTop="36dp"
+        android:id="@+id/Password" />
+
+</RelativeLayout>
